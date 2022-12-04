@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block head %}
+
+<title>Welcome Page</title>
+
+{% endblock %} {% block body %}
+
+<main role="main">
+  <div class="jumbotron">
+    <div class="col-sm-8 mx-auto">
+      <h1>Welcome To The Blog Post App</h1>
+      <p>Click the button below to start writing your blog!</p>
+      <p>
+        <a class="btn btn-primary" href="{{url_for('posts')}}" role="button"
+          >New Post>></a
+        >
+      </p>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <span class="text-muted">Copyright © .</span>
+  </div>
+</footer>
+{% endblock %}
